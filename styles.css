@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Sawarabi+Gothic&display=swap');
+
+:root {
+    --text: rgb(239, 234, 246);
+    --background: rgb(40, 34, 48);
+    --primary: rgb(187, 164, 213);
+    --secondary: rgb(130, 39, 80);
+    --accent: rgb(247, 211, 34);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+    line-height: 1.5;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    color: var(--text);
+    font-family: 'Fira Code', monospace;
+    background-image: url(/images/fondo.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+h1, h2 {
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+h1 {
+    font-size: 5.652rem;
+}
+h2 {
+    font-size: 3.997rem;
+}
+small {
+    font-size: 0.707rem;
+}
+p {
+    font-size: 1rem;
+}
+
+button {
+    color: var(--text);
+    background-color: var(--secondary);
+    padding: 0.5rem 1.25rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    border: none;
+}
+input::placeholder {
+    color: var(--accent);
+}
