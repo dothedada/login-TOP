@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
 
 :root {
     --text: rgb(239, 234, 246);
@@ -23,36 +23,86 @@ body {
     background-image: url(/images/fondo.jpeg);
     background-size:cover;
     background-repeat: no-repeat;
-
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-
-}
-h1, h2 {
-  font-family: 'Sawarabi Gothic', sans-serif;
-}
-h1 {
-    font-size: 5.652rem;
-}
-h2 {
-    font-size: 3.997rem;
+    align-items: center;
 }
 small {
     font-size: 0.707rem;
 }
-p {
+
+.imagen {
+    height: 250px;
+    background-image: url(/images/ciudad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.login {
+    box-sizing: border-box;
+    background-color: var(--background);
+    width: clamp(300px, 80%, 600px);
+    box-shadow: 1rem 1rem 0 0 var(--secondary);
+}
+
+.formulario {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.formulario > div {
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: var(--primary);
+    border: none;
+    padding: 0.4rem 0.6rem;
+    margin: 0.4rem 0;
+    font-family: 'Fira Code', monospace;
     font-size: 1rem;
+    color: var(--background);
+    transition: transform 0.1s ease-in-out;
+}
+input::placeholder {
+    text-align: right;
+    color: var(--secondary);
+}
+input:required {
+    border: solid 2px green;
+}
+input:invalid {
+    border: solid 2px red;
+}
+input:focus {
+    background-color: var(--text);
+    border: none;
+    outline: 2px solid var(--secondary);
+    outline-offset: 0.2rem;
+    transform: scale(1.05);
 }
 
 button {
     color: var(--text);
     background-color: var(--secondary);
+    width: min(300px, 100%);
     padding: 0.5rem 1.25rem;
     font-family: 'Fira Code', monospace;
     font-size: 1rem;
     border: none;
+    align-self: center;
+    margin: 0.5rem 0 2rem;
+    transition: transform 0.1s ease-in-out;
 }
-input::placeholder {
-    color: var(--accent);
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--accent);
+    color: var(--background);
+}
+button:active {
+    transform: scale(1);
 }
