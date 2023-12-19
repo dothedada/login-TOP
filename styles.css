@@ -20,7 +20,7 @@ body {
     min-height: 100vh;
     color: var(--text);
     font-family: 'Fira Code', monospace;
-    background-image: url(/images/fondo.jpeg);
+    background-image: url(images/fondo.jpeg);
     background-size:cover;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -33,7 +33,7 @@ small {
 
 .imagen {
     height: 250px;
-    background-image: url(/images/ciudad.png);
+    background-image: url(images/ciudad.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
